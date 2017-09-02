@@ -1,0 +1,51 @@
+<div class="row">
+	<div class="col-md-3">
+		<p class="blackP"><input type="text" class="langInput" ng-model="searchtxt" value=""></p>
+	</div>
+	<div class="col-md-9 whiteBG">
+		<div class="col-md-2">Repo <span class="langCounts">228k</span></div>
+		<div class="col-md-2">Code <span class="langCounts">228k</span></div>
+		<div class="col-md-2">Commits <span class="langCounts">228k</span></div>
+		<div class="col-md-2">Issues <span class="langCounts">228k</span></div>
+		<div class="col-md-2">Wikis <span class="langCounts">228k</span></div>
+		<div class="col-md-2">Users <span class="langCounts">228k</span></div>
+	</div>	
+</div>
+
+<div class="row "> 
+    <div class="col-md-12 languageWhiteBG">
+    	<div class="col-md-4 rightDiv">
+			<div class="languageSection greyBorder">
+				<p>Languages</p>
+				<!-- <ul>
+				  	<li ng-repeat="x in myData">
+					    {{ x.language }}
+					  </li>
+				</ul> -->
+				<ul ng-repeat="(key,value) in output">
+				  <li>{{key}} : {{value}}</li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-md-8 leftDiv">
+			<div class="row">
+				<div class="languageSection">
+					<p>
+						<span class="repoCount">Pinned Repositories</span></p>
+				</div>
+			</div><hr/>
+			<div class="row languageRow" >
+				<div class="col-md-6" ng-repeat="x in myData">
+					<div class="height200px">
+						<p><span class="fullName">{{x.full_name}}</span></p>
+						<p class="subText">{{x.description}}</p>
+						<p><span class=""><i class="fa fa-circle yellowCircle" aria-hidden="true"></i> {{ x.name }}</span>
+						<span class=""><i class="fa fa-star" aria-hidden="true"></i> {{x.stargazers_count}}</span></p>
+					</div>
+				</div>	
+			</div>
+		</div>
+   </div>
+</div>
+  	
+  

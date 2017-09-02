@@ -1,0 +1,40 @@
+<div class="row">  
+   <div class="col-md-12">
+		<div class="col-md-8 leftDiv">
+			<div class="row" ng-click="redirect('javascript')">
+				<div class="languageSection greyBorder">
+					<p><img src="templates/images/js.png" class="width100px">
+					<span class="languageText">JavaScript</span></p>
+				</div>
+			</div>
+			<div class="row" ng-click="redirect('java')">
+				<div class="languageSection greyBorder">
+					<p><img src="templates/images/java.png" class="width100px">
+					<span class="languageText">Java</span></p>
+				</div>
+			</div>
+			<div class="row" ng-click="redirect('python')">
+				<div class="languageSection greyBorder">
+					<p><img src="templates/images/python.png" class="width100px">
+					<span class="languageText">Python</span></p>
+				</div>
+			</div>
+			<div class="row" ng-click="redirect('php')">
+				<div class="languageSection greyBorder">
+					<p><img src="templates/images/php.png" class="width100px">
+					<span class="languageText">PHP</span></p>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4 rightDiv">
+			<div class="languageSection greyBorder">
+				<p>Languages</p>
+				<ul ng-repeat="(key,value) in output">
+				  <li>{{key}} : {{value}}</li>
+				</ul>
+			</div>
+		</div>   	
+   </div>
+</div>
+  	
+  

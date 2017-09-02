@@ -1,0 +1,1 @@
+var castHack = angular.module("cast",['ui.router']);

@@ -1,0 +1,65 @@
+body{
+     background: url("../images/body_bg.png") no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+.mainLogo{position: absolute;top: 5px;text-decoration: none !important;}
+
+.logoText{color: #4CAF50;padding: 0px 10px;font-size: 24px;position: relative;top: 5px;}
+.userName{float:right;margin:15px;}
+.userName > a {color:#333;text-decoration: none;}
+.navbar-inverse {background-color: #fff;border-bottom: 2px solid grey;}
+.mainSection{margin-top:50px;padding:10px 0px}
+
+.arrowBox {
+    display: none;height: 120px;width: 170px;background: #fff;box-shadow: 0 1px 7px 2px rgba(135,158,171,.2);
+    -o-border-radius: 4px;-ms-border-radius: 4px;-moz-border-radius: 4px;-webkit-border-radius: 4px;
+    border-radius: 4px;position: absolute;right: 120px;top:45px;z-index: 1030;
+}
+.arrowBox:before{
+    position: absolute;top: -7px;left: 7px;display: inline-block;content: '';
+    border-right: 7px solid transparent;border-bottom: 7px solid transparent;
+    border-bottom-color: transparent;border-left: 7px solid transparent;
+}
+.arrowBox:after {
+    position: absolute;top: -6px;right: 8px;display: inline-block;
+    content: '';border-right: 6px solid transparent;border-bottom: 6px solid #fff;
+    border-left: 6px solid transparent;
+}
+.arrowBox > ul {list-style-type:none;padding:10px 10px;}
+.arrowBox > ul > li {padding: 3px 0px;}
+.arrowBox > ul > li > a{color:#333;}
+.profileIcon{padding: 0px 10px;}
+.languageSection{margin:10px;padding: 10px;}
+.leftDiv{}
+.greyBorder{border:2px solid grey;min-height:50px;padding: 10px;background: #fff}
+.rightDiv{}
+.width100px{width:80px;}
+.languageText{font-size: 36px;padding: 0px 50px;}
+.blackP{background: #333;padding: 5px;text-align: center;}
+.whiteBG{background: #fff;height: 40px;padding: 8px 0px;}
+.languageWhiteBG{background: #fff;}
+.langInput{background:grey;border-radius: 0px;color: #fff;border: none;padding: 5px 10px;}
+.langCounts{background: grey;color: #fff;padding: 5px;border-radius: 10px;}
+.repoCount{font-size: 20px;}
+.noStyleList{list-style-type: none;}
+.languageRow{border-bottom: 1px solid grey;margin: 10px;padding: 10px;}
+.fullName{font-size: 24px;color: #4286f4;}
+.yellowCircle{color:#f4cb42;}
+.subText{color: grey;font-size: 12px;}
+.height200px{height: 120px;border:1px solid grey;margin:10px;padding:10px }
+.author{background: aliceblue;padding: 5px 10px;border-radius: 5px;color: blue;}
+@media (max-width: 767px) {
+.arrowBox {right:20px;}
+.mainLogo > img {display: none;}
+.languageText{font-size: 24px;padding: 0px 10px;}
+.whiteBG{height: auto;}
+.col-md-9 > .col-md-2 {margin:10px;} 
+.marginLeft45px{margin-right: 45px;}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    
+}

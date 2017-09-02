@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang = "en" ng-app="cast">
+<head>
+ <!-- META SECTION -->
+    <!-- <title>McaaS</title>       -->      
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<!-- CSS Include -->
+	<link rel="shortcut icon" href="templates/images/cast.ico" />
+	<link rel="stylesheet" href="templates/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="templates/css/font-awesome-4.7.0/css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="templates/css/customStyle.css" />
+</head>
+
+<body>
+	<div class="container mainContainer">
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+  			<div class="container">
+			    <div class="navbar-header">
+			      <!-- <a class="mainLogo" href="http://www.castsoftware.com/"> -->
+			      <a class="mainLogo" href="#/home">
+			      	<img src="templates/images/logo.PNG">
+			      	<span class="logoText">TechScan</span>
+			      </a>
+			    </div>
+			    <div class="userName">
+			    	<a href="#" class="userProfile">
+			    		<i class="fa fa-lg fa-user-circle" aria-hidden="true"></i> Ragav
+			    	</a>
+			    </div>
+			</div>
+		</nav>
+		<div class="arrowBox">
+				        <ul class="">
+				            <li><a href="javascript:void(0);"><span class="profileIcon"><i class="fa fa-user" aria-hidden="true"></i></span> My Profile</a></li>
+				            <li><a href="javascript:void(0);"><span class="profileIcon"><i class="fa fa-cog" aria-hidden="true"></i></span> Account Settings</a></li>
+				            <li><a href="javascript:void(0);"><span class="profileIcon"><i class="fa fa-question-circle" aria-hidden="true"></i></span> Help</a></li>
+				            <li><a href="javascript:void(0);"><span class="profileIcon"><i class="fa fa-sign-in" aria-hidden="true"></i></span> Log out</a></li>
+				        </ul>
+				    </div>
+		<div ui-view ="" class="mainSection"></div>
+	</div>	
+	
+   	<script src= "lib/jquery.js"></script>
+    <script src= "lib/angular.js"></script>
+    <script src= "lib/angular-ui-router.js"></script>
+    <script src= "lib/angular-sanitize.js"></script>
+    <script src= "lib/bootstrap.js"></script>
+	<script src= "config/app.js"></script>
+	<script src= "config/route.js"></script>
+
+	<script src= "controllers/castController.js"></script>
+	<script src= "controllers/languagesController.js"></script>
+	<script src= "controllers/userController.js"></script>
+	<script src= "services/urlMapperService.js"></script>
+	
+	 
+</body>
+</html>
